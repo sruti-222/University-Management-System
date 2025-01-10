@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0f3460;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Ensures body takes full height */
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: maroon;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo {
+            margin-left: 100px;
+        }
+
+        .header .logo img {
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .header .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            font-weight: 600;
+            color: #f1f1f1;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0e153a;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-left {
+            display: flex;
+        }
+
+        .navbar-left a {
+            margin-right: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color  0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-left a:hover {
+            background-color: #e94560;
+            transform: translateY(-3px);
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Dropdown Menu for Login */
+        .navbar-right select {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 30px;
+            background-color: #e94560;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-right select:hover {
+            background-color: #ff5e78;
+        }
+
+        /* Main Content Section */
+        .content {
+            flex: 1;
+            /* Allows the content to grow and push the footer down */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            color: #f1f1f1;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .content h2 {
+            color: #e0e0e0;
+            font-size: 28px;
+            border-bottom: 2px solid #0f3460;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWRh_RfGCOXreB_1jqaEmwqjTFRxL7B6ApZw&s"
+                alt="University Logo">
+        </div>
+        <div class="title">
+            Sri Sri University
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="create.html">Registration</a>
+            <a href="#Dashboard">Dashboard</a>
+        </div>
+        <div class="navbar-right">
+            <!-- Dropdown for Login -->
+            <select onchange="location = this.value;">
+                <option value="#">Login</option>
+                <option value="login.html">Student Login</option>
+                <option value="teacher-login.html">Teacher Login</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Our Vision</h2>
+        <p>
+            At Sri Sri University, we aim to provide world-class education that fosters the holistic development of
+            individuals, empowering them to lead with knowledge, compassion, and integrity. Our vision is to
+            cultivate a generation of leaders who are not only proficient in their respective fields but also driven
+            by a deep sense of responsibility towards society and the environment.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to create a vibrant educational environment that nurtures innovation, creativity, and
+            critical thinking. We strive to equip our students with the skills and knowledge needed to excel in a
+            rapidly changing world, while also instilling in them the values of ethical leadership and global
+            citizenship. Through our diverse academic programs and extracurricular activities, we aim to foster a
+            culture of excellence, inclusivity, and continuous learning.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+        <p>
+            Sri Sri University is committed to providing a transformative educational experience. Here’s why you
+            should choose us:
+        </p>
+        <ul>
+            <li>State-of-the-art facilities and a beautiful campus.</li>
+            <li>Highly qualified faculty with expertise in various fields.</li>
+            <li>A diverse range of academic programs tailored to your interests.</li>
+            <li>Strong emphasis on research, innovation, and entrepreneurship.</li>
+            <li>Focus on holistic development, including physical, mental, and spiritual well-being.</li>
+            <li>Extensive global network and opportunities for international exposure.</li>
+        </ul>
+
+        <h2>Our History</h2>
+        <p>
+            Established in [Year], Sri Sri University has grown to become a leading institution of higher education.
+            Over the years, we have built a strong reputation for academic excellence, research innovation, and
+            community engagement. Our graduates have gone on to excel in various fields, making a significant impact
+            on society.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+            We would love to hear from you! Feel free to reach out to us for any inquiries or further information
+            about our programs and admissions.
+        </p>
+        <p>
+            <strong>Email:</strong> info@srisriuniversity.edu.in<br>
+            <strong>Phone:</strong> +91-123-456-7890<br>
+            <strong>Address:</strong> Sri Sri University, Campus Road, Odisha, India
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Sri Sri University. All rights reserved. <br>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+    </div>
+
+</body>
+
+</html>
